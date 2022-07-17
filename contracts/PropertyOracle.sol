@@ -43,12 +43,4 @@ contract PropertyOracle {
     function GetPropertyInfo(uint256 propertyId) external view returns(string memory info) {
         return propertyInfo[propertyId];
     }
-
-    function GetPropertyCount() external view returns(uint256 count) {
-        return propertyCount;
-    }
-
-    function GetCommonwealth() external view returns(address cw) {
-        return commonwealth;
-    }
 }
